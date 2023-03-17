@@ -1,6 +1,8 @@
 ---
 - name: STIG a Windows 2022 Server
   hosts: all
+  vars:
+    win2022STIG_stigrule_254269_Manage: False
 
   tasks:
     - name: Include win2022STIG role
